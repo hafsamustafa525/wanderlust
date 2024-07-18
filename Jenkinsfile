@@ -51,7 +51,7 @@ pipeline {
             steps {
                 script {
                     echo 'Deploying the app'
-                    sh "docker-compose down && docker-compose up -d"
+                    sh "docker-compose down && docker-compose up -d --build"
                 }
             }
         }
