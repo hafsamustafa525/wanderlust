@@ -8,7 +8,7 @@ pipeline {
         stage("Clone Code from GitHub") {
             steps {
                 script {
-                    echo "Cloning the code from github"
+                    echo "Code cloning from Github"
                     git(url: "https://github.com/qasimnauman/wanderlust.git", branch: "devops")
                 }
             }
